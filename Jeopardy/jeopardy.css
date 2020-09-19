@@ -1,0 +1,16 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+table {
+    position:absolute;
+    width:99%;
+    height: 90%;
+    border: 1px solid black
+}
+th{
+    border: 1px solid black
+}
+td{
+    text-align: center;
+    border: 1px solid black
+}
