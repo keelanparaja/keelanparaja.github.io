@@ -1,16 +1,28 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
+table, th, td {
+}
 table {
     position:absolute;
     width:99%;
-    height: 90%;
-    border: 1px solid black
+    height: 97%;
+    border-spacing: 10px;
+    background-color: #ced7d8;
 }
 th{
-    border: 1px solid black
+    border-radius:3px;
+    color: #ececec ;
+    background-color: #316879
 }
 td{
+    border-radius:3px;
     text-align: center;
-    border: 1px solid black
+    background-color: #7fe7dc;
+    border: 1px solid #5da8a1;
 }
+
+/*
+Teal, coral, turquiose and grey
+#316879, #f47a60, #7fe7dc, #ced7d8
+*/
