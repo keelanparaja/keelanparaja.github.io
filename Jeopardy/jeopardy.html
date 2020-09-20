@@ -1,52 +1,67 @@
 <!DOCTYPE html>
-<head>
-    <link rel="stylesheet" href="jeopardy.css"/>
-    <title>Jeopardy</title>
-</head>
-<body>
-    <table>
-        <tr>
-            <th>Category 1</th>
-            <th>Category 2</th>
-            <th>Category 3</th>
-            <th>Category 4</th>
-            <th>Category 5</th>
-        </tr>
-        <tr>
-            <td>100</td>
-            <td>100</td>
-            <td>100</td>
-            <td>100</td>
-            <td>100</td>
-        </tr>
-        <tr>
-            <td>200</td>
-            <td>200</td>
-            <td>200</td>
-            <td>200</td>
-            <td>200</td>
-        </tr>
-        <tr>
-            <td>300</td>
-            <td>300</td>
-            <td>300</td>
-            <td>300</td>
-            <td>300</td>
-        </tr>
-        <tr>
-            <td>400</td>
-            <td>400</td>
-            <td>400</td>
-            <td>400</td>
-            <td>400</td>
-        </tr>
-        <tr>
-            <td>500</td>
-            <td>500</td>
-            <td>500</td>
-            <td>500</td>
-            <td>500</td>
-        </tr>
-    </table>
-</body>
+    <head>
+        <link rel="stylesheet" href="jeopardy.css"/>
+        <title>Jeopardy</title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>Category 1</th>
+                <th>Category 2</th>
+                <th>Category 3</th>
+                <th>Category 4</th>
+                <th>Category 5</th>
+            </tr>
+            <tr>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>200</td>
+                <td>200</td>
+                <td>200</td>
+                <td>200</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td>300</td>
+                <td>300</td>
+                <td>300</td>
+                <td>300</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>400</td>
+                <td>400</td>
+                <td>400</td>
+                <td>400</td>
+                <td>400</td>
+            </tr>
+            <tr>
+                <td>500</td>
+                <td>500</td>
+                <td>500</td>
+                <td>500</td>
+                <td>500</td>
+            </tr>
+        </table>
+        <div class="modal" style="display:none">
+            <div class="overlay"></div><!-- Responsible for hiding content of web app-->
+            <div class="modal_content"><!-- Responsible for holding content of modal-->
+            <!-- Dynamic Section -->
+            <h2>Hey Awesome Modal!</h2>
+            <p style="text-align: center;">
+                Cupcake ipsum dolor sit amet pie brownie. Carrot cake wafer I love pie bear claw. Sweet cake cheesecake candy canes carrot cake marshmallow. Sweet roll I love sweet fruitcake donut chupa.
+            </p>
+            <!-- End of Dynamic Section -->
+            <button title="Close" class="close_modal">
+                <i class="fas fa-times">X</i>
+            </button>
+            </div>
+        </div>
+        <script type="text/javascript" src="jeopardy.js"></script>
+    </body>
 </html>
