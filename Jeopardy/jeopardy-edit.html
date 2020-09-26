@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" href="jeopardy.css"/>
+        <title>Jeopardy</title>
+    </head>
+    <body>
+        <div class="modal" style="display:none">
+            <div class="overlay"></div><!-- Responsible for hiding content of web app-->
+            <div class="modal_content"><!-- Responsible for holding content of modal-->
+            <!-- Dynamic Section -->
+            <h2>Hey Awesome Modal!</h2>
+            <p style="text-align: center;">
+                Cupcake ipsum dolor sit amet pie brownie. Carrot cake wafer I love pie bear claw. Sweet cake cheesecake candy canes carrot cake marshmallow. Sweet roll I love sweet fruitcake donut chupa.
+            </p>
+            <!-- End of Dynamic Section -->
+            <button title="Close" class="close_modal">
+                <i class="fas fa-times">X</i>
+            </button>
+            </div>
+        </div>
+        <table style="height:80vh; position:relative">
+            <tr>
+                <th><div class="customTableCell">Category 1</div></th>
+                <th><div class="customTableCell">Category 2</div></th>
+                <th><div class="customTableCell">Category 3</div></th>
+                <th><div class="customTableCell">Category 4</div></th>
+                <th><div class="customTableCell">Category 5</div></th>
+            </tr>
+            <tr>
+                <td ><div class="customTableCell">100</div></td>
+                <td><div class="customTableCell">200</div></td>
+                <td><div class="customTableCell">300</div></td>
+                <td><div class="customTableCell">400</div></td>
+                <td><div class="customTableCell">500</div></td>
+            </tr>
+            <tr>
+                <td ><div class="customTableCell">100</div></td>
+                <td><div class="customTableCell">200</div></td>
+                <td><div class="customTableCell">300</div></td>
+                <td><div class="customTableCell">400</div></td>
+                <td><div class="customTableCell">500</div></td>
+            </tr>
+            <tr>
+                <td ><div class="customTableCell">100</div></td>
+                <td><div class="customTableCell">200</div></td>
+                <td><div class="customTableCell">300</div></td>
+                <td><div class="customTableCell">400</div></td>
+                <td><div class="customTableCell">500</div></td>
+            </tr>
+            <tr>
+                <td ><div class="customTableCell">100</div></td>
+                <td><div class="customTableCell">200</div></td>
+                <td><div class="customTableCell">300</div></td>
+                <td><div class="customTableCell">400</div></td>
+                <td><div class="customTableCell">500</div></td>
+            </tr>
+            <tr>
+                <td ><div class="customTableCell">100</div></td>
+                <td><div class="customTableCell">200</div></td>
+                <td><div class="customTableCell">300</div></td>
+                <td><div class="customTableCell">400</div></td>
+                <td><div class="customTableCell">500</div></td>
+            </tr>
+        </table>
+        <button class="edit" id="edit-btn" type="button" onclick="makeEditable();">Edit</button>
+        <button class="edit" id="save-btn" type="button" onclick="saveChanges();">Save</button>
+        <script type="text/javascript" src="jeopardy.js"></script>
+    </body>
+</html>
