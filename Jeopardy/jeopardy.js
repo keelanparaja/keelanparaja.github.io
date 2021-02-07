@@ -33,3 +33,177 @@ function toggleModal() {
     detachModalListeners(modal);  
   }
 }
+function makeEditable(){
+  let tds = document.getElementsByTagName("td");
+  let ths = document.getElementsByTagName("th");
+
+  for(var i=0; i < ths.length; i++){
+    ths[i].setAttribute("contentEditable","true");
+  }
+  for(var i=0; i < tds.length; i++){
+    tds[i].setAttribute("contentEditable","true");
+    
+    // remove eventListener from buttons
+    tds[i].removeEventListener("click",toggleModal);
+  }
+}
+function saveChanges(){
+  /*
+    1. Read JSON template file.
+    2. Comb table and fill in JSON.
+    3. Download JSON for user.
+  */
+  const loc = "https://keelanparaja.github.io/Jeopardy/board_template.json";
+  // use test JSON for now
+
+  //let jsonTemplate = JSON.parse(readFile(loc));
+  let changes = addChanges(testJson);
+  //saveChanges(JSON.stringify(changes));
+}
+function readFile(loc){
+  let obj = new XMLHttpRequest();
+  obj.open("GET", loc, false);
+  obj.onreadystatechange = function ()
+    {
+        if(obj.readyState === 4)
+        {
+            if(obj.status === 200 || obj.status == 0)
+            {
+                return obj.responseText;
+            }
+        }
+    }
+    obj.send(null);
+}
+function addChanges(){
+  //TODO: create this function to comb jeopardy table and add all values
+  // to the JSON template.
+}
+
+var testJson = {
+  "category_1" : {
+      "title" : "",
+      "options" : {
+          "one" : {
+              "title" : "",
+              "question": ""    
+          },
+          "two" : {
+              "title" : "",
+              "question": ""    
+          },
+          "three" : {
+              "title" : "",
+              "question": ""    
+          },
+          "four" : {
+              "title" : "",
+              "question": ""    
+          },
+          "five" : {
+              "title" : "",
+              "question": ""    
+          }    
+      }
+  },
+  "category_2" : {
+      "title" : "",
+      "options" : {
+          "one" : {
+              "title" : "",
+              "question": ""    
+          },
+          "two" : {
+              "title" : "",
+              "question": ""    
+          },
+          "three" : {
+              "title" : "",
+              "question": ""    
+          },
+          "four" : {
+              "title" : "",
+              "question": ""    
+          },
+          "five" : {
+              "title" : "",
+              "question": ""    
+          }    
+      }
+  },
+  "category_3" : {
+      "title" : "",
+      "options" : {
+          "one" : {
+              "title" : "",
+              "question": ""    
+          },
+          "two" : {
+              "title" : "",
+              "question": ""    
+          },
+          "three" : {
+              "title" : "",
+              "question": ""    
+          },
+          "four" : {
+              "title" : "",
+              "question": ""    
+          },
+          "five" : {
+              "title" : "",
+              "question": ""    
+          }    
+      }
+  },
+  "category_4" : {
+      "title" : "",
+      "options" : {
+          "one" : {
+              "title" : "",
+              "question": ""    
+          },
+          "two" : {
+              "title" : "",
+              "question": ""    
+          },
+          "three" : {
+              "title" : "",
+              "question": ""    
+          },
+          "four" : {
+              "title" : "",
+              "question": ""    
+          },
+          "five" : {
+              "title" : "",
+              "question": ""    
+          }    
+      }
+  },
+  "category_5" : {
+      "title" : "",
+      "options" : {
+          "one" : {
+              "title" : "",
+              "question": ""    
+          },
+          "two" : {
+              "title" : "",
+              "question": ""    
+          },
+          "three" : {
+              "title" : "",
+              "question": ""    
+          },
+          "four" : {
+              "title" : "",
+              "question": ""    
+          },
+          "five" : {
+              "title" : "",
+              "question": ""    
+          }    
+      }
+  }
+};
