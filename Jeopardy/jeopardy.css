@@ -36,10 +36,10 @@ td{
   background-color: #5da8a1;
   cursor: pointer;
 }*/
-  td:hover {
-    color: #ececec;
-    background-color: #5da8a1;
-    cursor: pointer;
+td:hover {
+  color: #ececec;
+  background-color: #5da8a1;
+  cursor: pointer;
 }
 /*
 Teal, coral, turquiose and grey
