@@ -1,34 +1,45 @@
 <html>
     <head>
-        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="home_v2.css">
+        <script src="home.js"></script>
         <title>
-            Home
+            
         </title>
     </head>
     <body>
-        <div class="wrapper">
+        <div class="container">
             <div class="col-1">
-                <div class="text-box">
-                    <div><h1>Keelan Paraja</h1></div>
-                    <div><h2>business analyst.<br>data cruncher. developer</h2></div>
-                    <div><h3>About | Education | Experience</h3></div>
-                </div>
+                <h1>Keelan Paraja</h1>
+                <h2>business analyst.<br>data cruncher. developer</h2>
+                <h3>About | Education | Experience</h3>
             </div>
             <div class="col-2">
-                <div class="flow-chart">
-                    <div id="flow-chart-circle-start"></div>
-                    <div class="flow-chart-level-one">
-                        <div class="flow-chart-connector"></div>
-                        <div id="flow-chart-decision">Learn more</div>
-                    </div> 
-                    <div class="flow-chart-level-two">
-                        <div class="flow-chart-connector" id="fc-2-left"></div>
-                        <div class="flow-chart-connector" id="fc-2-down"></div>
-                        <div id="flow-chart-decision-no">No</div>
-                        <div id="flow-chart-decision-yes">Yes</div>
+                <div class="circle-start" data-toggle="off" onclick="flowChartVisibility(this)"></div>
+                <div class="level-one" data-toggle="off" onclick="flowChartVisibility(this)" style="display: none">
+                    <div class="v-connector"></div>
+                    <div class="decision">Learn more</div>
+                </div>
+                <div class="level-two" data-toggle="off" onclick="flowChartVisibility(this)" style="display: none">
+                    <div class="h-connector left"></div>
+                    <div class="v-connector down"></div>
+                    <div class="decision no">No</div>
+                    <div class="decision yes">Yes</div>
+                </div>
+                <div class="level-three" data-toggle="off" style="display: none">
+                    <div class="elbow left">
+                        <div class="h-connector"></div>
+                        <div class="v-connector"></div>
                     </div>
-                </div>    
+                    <div class="v-connector down"></div>
+                    <div class="elbow right">
+                        <div class="h-connector"></div>
+                        <div class="v-connector"></div>
+                    </div>
+                    <div class="decision right">Experience</div>
+                    <div class="decision left">About</div>
+                    <div class="decision middle">Education</div>   
+                </div>
             </div>
-        </div>
+       </div>
     </body>
 </html>
