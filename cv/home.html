@@ -11,19 +11,23 @@
             <div class="col-1">
                 <h1>Keelan Paraja</h1>
                 <h2>business analyst.<br>data cruncher. developer</h2>
-                <h3>About | Education | Experience</h3>
+                <nav><h3><a href="google.com">About</a>  <a href="google.com">Education</a>  <a href="google.com">Experience</a></h3></nav>
             </div>
             <div class="col-2">
+                <svg >
+                    <!--Create an SVG element that says "Click me" and has a curved line pointing to
+                    the circle-start element-->
+                </svg>
                 <div class="circle-start" data-toggle="off" onclick="flowChartVisibility(this)"></div>
-                <div class="level-one" data-toggle="off" onclick="flowChartVisibility(this)" style="display: none">
+                <div class="level-one" data-toggle="off" style="display: none">
                     <div class="v-connector"></div>
-                    <div class="decision">Learn more</div>
+                    <div class="decision" onclick="flowChartVisibility(this.parentElement)">Learn more</div>
                 </div>
-                <div class="level-two" data-toggle="off" onclick="flowChartVisibility(this)" style="display: none">
+                <div class="level-two" data-toggle="off" style="display: none">
                     <div class="h-connector left"></div>
                     <div class="v-connector down"></div>
                     <div class="decision no">No</div>
-                    <div class="decision yes">Yes</div>
+                    <div class="decision yes" onclick="flowChartVisibility(this.parentElement)">Yes</div>
                 </div>
                 <div class="level-three" data-toggle="off" style="display: none">
                     <div class="elbow left">

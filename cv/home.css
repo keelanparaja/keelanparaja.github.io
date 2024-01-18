@@ -24,6 +24,8 @@ body {
 h1 {
     font-weight: 600;
     font-size: 72pt;
+    /*background-color: var(--default-text-color);
+    color: var(--background-color);*/
 }
 h2 {
     font-weight: 300;
@@ -39,13 +41,26 @@ h3 {
     font-weight: 100;
     font-size: 20pt;
     letter-spacing: 1px;
+    color: var(--default-text-color);
+}
+a:link { 
+  color: var(--default-text-color);
+  text-decoration: underline; 
+} 
+a:visited { 
+  text-decoration:none; 
+} 
+a:hover { 
+  text-decoration:solid;
+} 
+a:active { 
+  text-decoration: none; 
 }
 .container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    border: 1px solid lightcoral;
     height: 100%;
 }
 .col-1 {
@@ -65,6 +80,9 @@ h3 {
     flex-shrink: 0;
 }
 .circle-start {
+  font-size: 11pt;
+  text-align: center;
+  vertical-align: middle;
   margin-left:auto;
   margin-right:auto;
   width: 100px;
@@ -72,6 +90,10 @@ h3 {
   border-radius: 50%;
   background:var(--circle-color);
   animation: pulse-circle-start 2s infinite;
+}
+.circle-start:hover{
+  background-color: rgba(255,230,80,255);;
+  cursor:pointer;
 }
 .decision {
   width:  var(--decision-width);
@@ -139,6 +161,9 @@ h3 {
   - var(--connector-width)
   + (2 * var(--l2-h-connector-margin-top))) * -1);
 }
+.level-two > .decision.no:hover {
+  cursor: not-allowed;
+}
 .level-two > .decision.yes {
   background-color: var(--decision-yes-color);
   color: var(--default-text-color);
@@ -148,6 +173,9 @@ h3 {
   margin-right: auto;
   margin-top: var(--connector-height);
   animation: pulse-decision-yes 2s infinite;
+}
+.level-two > .decision.yes:hover {
+  background-color: rgba(3,195,154,0.8);
 }
 .level-three {
   display: none;
